@@ -1,4 +1,4 @@
-# HelloID-Conn-Prov-Target-Adobe-Creative-Cloud
+# HelloID-Conn-Prov-Target-Adobe-CreativeCloud
 This connector allows you to create, update and delete Federated IDs in Adobe Creative Cloud.
 
 ## Table of Contents
