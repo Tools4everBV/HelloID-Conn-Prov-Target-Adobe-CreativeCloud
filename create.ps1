@@ -109,7 +109,7 @@ function New-Jwt {
 }
 
 $jsonPayload = @{ 
-    'exp' = (([int](Get-Date -UFormat %s)) + 60*60) #JWT expires in one hour
+    'exp' = ([DateTimeOffset]::Now.ToUnixTimeSeconds() + 60*60) #JWT expires in one hour
     'iss' = $config.orgId;
     "sub" = $config.technicalAccountID;
     'https://ims-na1.adobelogin.com/s/ent_user_sdk' = $true;
